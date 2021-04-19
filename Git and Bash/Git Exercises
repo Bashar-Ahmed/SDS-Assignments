@@ -1,0 +1,89 @@
+Email used:
+basharahmed00000@gmail.com
+
+
+git push -u origin *** 
+After every task
+
+master
+git verify
+
+commit-one-file
+git status
+git add A.txt
+git commit -m "A"
+
+commit-one-file-staged
+git status
+git reset
+git status
+git add A.txt
+git commit -m "A"
+
+ignore-them
+gedit .gitignore
+	*.exe
+	*.o
+	*.jar
+	**/libraries/
+git add .
+git commit-m "giti"
+
+chase-branch
+git merge escaped
+
+merge-conflict
+git merge another-....
+gedit equation.txt
+	2 + 3 = 5
+git add .
+git commit -m "cr"
+git merge another-.....
+
+save-your-work
+git status
+git stash
+gedit bug.txt(Remove bug line)
+git add .
+git commit -m ...
+git stash pop
+gedit bug.txt(Enter final line)
+git add .
+git commit -m ...
+
+change-branch-history
+git checkout hot-bug
+git log
+git rebase <commit ID>
+git checkout change-branch
+git rebase hot-bug
+
+remove-ignored
+git rm ignored.txt
+git add .
+git commit -m "RM"
+
+case-sensitive-filename
+git mv File.txt file.txt
+git add .
+git commit -m "Rename"
+
+fix-typo
+gedit file.txt
+git add .
+git commit --amend
+
+forge-date
+git commit --amend --no-edit --date "########"
+
+fix-old-typo
+git log
+git rebase -i HEAD~2
+edit(interactive)
+gedit file.txt
+git add file.txt
+git rebase --continue
+gedit file.txt(Solve Merge Conflict)
+git add file.txt
+git rebase --continue
+

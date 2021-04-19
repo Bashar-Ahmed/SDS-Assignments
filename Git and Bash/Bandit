@@ -1,0 +1,84 @@
+Bandit
+
+Level 0
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+P-bandit0
+
+Level 0-1
+cat readme
+P-boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+Level 1-2
+cat ./-
+P-CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+Level 2-3
+cat spaces\ in\ this\ filename
+P-UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Level 3-4
+cd inhere
+cat .hidden
+P-pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+Level 4-5
+cd inhere
+ls
+file ./-file*
+cat ./-file07
+P-koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+Level 5-6
+find -type f -size 1033c ! -executable
+cd ......
+cat ....
+P-DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+Level 6-7
+cd ./..
+cd ..
+find -user ... -group ... -size 33c
+Check which all files are accessible (Only 1 such file)
+cat .....
+P-HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+Level 7-8
+grep -i millionth data.txt
+P-cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+Level 8-9
+sort data.txt | uniq -u
+P-UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+Level 9-10
+strings data.txt
+P-truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+Level 10-11
+base64 -d data.txt
+P-IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+Level 11-12
+cat data.txt | tr '[A-Z]' '[N-ZA-M]' | tr '[a-z]' '[n-za-m]'
+P-5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+Level 12-13
+mkdir /tmp/bashar
+cp data.txt /txt/bashar
+cd /tmp/bashar
+xxd -r data.txt new
+//keep extracting until u get an ASCII file
+//mv temp temp.ext
+//using tar -xvf,gz,bzip2 -d according to type of file
+cat final
+P-8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+Level 13-14
+ssh -i sshkey.private bandit14@localhost
+P-4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+Level 14-15
+nc localhost 30000
+P-BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+
